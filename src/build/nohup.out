@@ -1,0 +1,47 @@
+/home/ubuntu/TSH/src/build/bin/tc_http_server[conf ] 
+conf file path: /home/ubuntu/TSH/tc_http_server.conf
+cache pool: token, list size: 2
+cache pool: ranking_list, list size: 2
+20250513 05:34:33.608101Z 2605008 ERROR decodeRegisterJson failed - api_register.cc:168
+20250513 08:45:24.313117Z 2605009 WARN  CacheGetCount FILE_PUBLIC_COUNT failed - api_sharefiles.cc:20
+20250513 08:45:24.316188Z 2605007 WARN  CacheGetCount FILE_PUBLIC_COUNT failed - api_sharefiles.cc:20
+20250513 11:20:43.782330Z 2605010 ERROR url unknown, url= /api/bin/440393?time=1747135243355718707 - http_conn.cc:76
+20250513 13:14:43.491420Z 2605007 WARN  CacheGetCount FILE_PUBLIC_COUNT failed - api_sharefiles.cc:20
+20250513 13:21:59.282232Z 2605011 ERROR VerifyToken failed - api_myfiles.cc:397
+20250513 13:21:59.285134Z 2605012 ERROR VerifyToken failed - api_myfiles.cc:370
+20250513 13:22:00.526159Z 2605007 WARN  CacheGetCount FILE_PUBLIC_COUNT failed - api_sharefiles.cc:20
+20250513 13:22:00.529208Z 2605010 WARN  CacheGetCount FILE_PUBLIC_COUNT failed - api_sharefiles.cc:20
+20250513 13:22:01.176835Z 2605013 ERROR CacheGetCount failed - api_sharepicture.cc:174
+20250513 13:22:02.825270Z 2605012 ERROR VerifyToken failed - api_myfiles.cc:397
+20250513 13:22:02.828281Z 2605007 ERROR VerifyToken failed - api_myfiles.cc:370
+20250513 13:22:03.546750Z 2605009 ERROR VerifyToken failed - api_myfiles.cc:397
+20250513 13:22:03.549803Z 2605014 ERROR VerifyToken failed - api_myfiles.cc:370
+20250513 13:22:04.409296Z 2605012 ERROR VerifyToken failed - api_myfiles.cc:397
+20250513 13:22:04.412219Z 2605007 ERROR VerifyToken failed - api_myfiles.cc:370
+20250513 13:22:18.259822Z 2605009 ERROR VerifyToken failed - api_myfiles.cc:397
+20250513 13:22:18.262233Z 2605014 ERROR VerifyToken failed - api_myfiles.cc:370
+20250513 13:22:29.588043Z 2605008 ERROR VerifyToken failed - api_myfiles.cc:397
+20250513 13:25:23.600615Z 2605013 ERROR parse reg json failed  - api_myfiles.cc:116
+20250513 13:25:23.600620Z 2605013 ERROR decodeFileslistJson failed - api_myfiles.cc:401
+20250513 13:29:59.177566Z 2605014 WARN  user: zmhzmh->  filename: 头像.jpg, md5: fb7fe05ed96dd62e3711f96d4bd37393已存在 - api_md5.cc:97
+20250513 13:33:01.011020Z 2605011 ERROR parse md5 json failed  - api_md5.cc:24
+20250513 13:33:01.011027Z 2605011 ERROR decodeMd5Json() err - api_md5.cc:189
+20250513 13:34:50.201178Z 2605013 ERROR parse md5 json failed  - api_md5.cc:24
+20250513 13:34:50.201183Z 2605013 ERROR decodeMd5Json() err - api_md5.cc:189
+20250513 13:36:06.778676Z 2605008 WARN  user: zmhzmh->  filename: api_dealfile.h, md5: e9d886cb08ddf450a82e37aa84daa697已存在 - api_md5.cc:97
+20250513 13:42:18.718621Z 2605007 WARN  getUserFilesCount = 0 - api_myfiles.cc:185
+20250513 13:43:25.029550Z 2605014 WARN  user: zmhzmh->  filename: api_dealfile.cc, md5: 84a95b5caa52103b2798ecbf66e572e8已存在 - api_md5.cc:97
+20250513 13:44:25.664073Z 2605008 WARN  getUserFilesCount = 0 - api_myfiles.cc:185
+20250513 13:44:35.221596Z 2605007 WARN  getUserFilesCount = 0 - api_myfiles.cc:185
+20250513 13:44:48.452816Z 2605014 WARN  getUserFilesCount = 0 - api_myfiles.cc:185
+20250513 13:44:59.775012Z 2605008 WARN  getUserFilesCount = 0 - api_myfiles.cc:185
+20250513 13:46:29.275958Z 2605010 WARN  user: zmhzmh->  filename: api_upload.h, md5: 805344baa85da2843f6c610a27caf8f0已存在 - api_md5.cc:97
+20250513 13:46:33.393312Z 2605007 WARN  user: zmhzmh->  filename: shorturl.proto, md5: 6cff647405d043eb7dc0c8fbe25ed657已存在 - api_md5.cc:97
+20250513 13:46:39.641486Z 2605014 WARN  user: zmhzmh->  filename: api_myfiles.h, md5: 3baced3994a7ec71ebea6a85204ad100已存在 - api_md5.cc:97
+20250513 13:47:28.867251Z 2605013 WARN  getUserFilesCount = 0 - api_myfiles.cc:185
+20250513 13:47:32.259276Z 2605009 WARN  getUserFilesCount = 0 - api_myfiles.cc:185
+20250513 13:47:33.805134Z 2605011 WARN  getUserFilesCount = 0 - api_myfiles.cc:185
+20250513 13:47:35.385144Z 2605010 WARN  getUserFilesCount = 0 - api_myfiles.cc:185
+20250514 03:58:06.821045Z 2605010 ERROR url unknown, url= /api/bin/440393?time=1747195086577268017 - http_conn.cc:76
+20250514 03:58:07.128168Z 2605013 ERROR url unknown, url= /api/user/binLookup?time=1747195086899508221 - http_conn.cc:76
+20250514 0

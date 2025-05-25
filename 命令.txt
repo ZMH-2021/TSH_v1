@@ -1,0 +1,86 @@
+# Tracker 和 Storage 服务命令
+sudo /etc/init.d/fdfs_trackerd start
+sudo /etc/init.d/fdfs_storaged start
+sudo /etc/init.d/fdfs_trackerd stop
+sudo /etc/init.d/fdfs_storaged stop
+sudo /etc/init.d/fdfs_trackerd restart
+sudo /etc/init.d/fdfs_storaged restart
+tail -f /home/fastdfs/tracker/logs/trackerd.log
+tail -f /home/fastdfs/storage/logs/storaged.log
+sudo lsof -i:22122
+
+
+# nginx命令
+sudo /usr/local/nginx/sbin/nginx
+sudo /usr/local/nginx/sbin/nginx -s stop
+sudo /usr/local/nginx/sbin/nginx -s reload
+sudo /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+
+
+# mysql命令
+sudo /etc/init.d/mysql start
+sudo /etc/init.d/mysql stop
+sudo /etc/init.d/mysql restart
+
+
+# redis命令
+sudo systemctl start redis
+sudo systemctl stop redis 
+sudo systemctl restart redis
+
+
+# 前台运行
+sudo /home/ubuntu/TSH/src/build/bin/tc_http_server /home/ubuntu/TSH/tc_http_server.conf 
+
+
+# 后台运行
+nohup sudo /home/ubuntu/TSH/src/build/bin/tc_http_server /home/ubuntu/TSH/tc_http_server.conf &
+
+
+# systemd（配置system之后使用）
+
+#!/bin/bash
+sudo systemctl start fdfs_storaged --now
+sudo systemctl start fdfs_trackerd --now
+sudo systemctl start nginx --now
+sudo systemctl start mysql --now
+sudo systemctl start redis --now
+sudo systemctl start tc_http_server --now
+
+
+#!/bin/bash
+sudo systemctl stop tc_http_server --now
+sudo systemctl stop nginx --now
+sudo systemctl stop mysql --now
+sudo systemctl stop redis --now
+sudo systemctl stop fdfs_trackerd --now
+sudo systemctl stop fdfs_storaged --now
+
+
+#!/bin/bash
+sudo systemctl status fdfs_storaged --now
+sudo systemctl status fdfs_trackerd --now
+sudo systemctl status nginx --now
+sudo systemctl status mysql --now
+sudo systemctl status redis --now
+sudo systemctl status tc_http_server --now
+
+
+#!/bin/bash
+sudo systemctl enable fdfs_storaged --now
+sudo systemctl enable fdfs_trackerd --now
+sudo systemctl enable nginx --now
+sudo systemctl enable mysql --now
+sudo systemctl enable redis --now
+sudo systemctl enable tc_http_server --now
+
+
+#!/bin/bash
+sudo systemctl disable fdfs_storaged --now
+sudo systemctl disable fdfs_trackerd --now
+sudo systemctl disable nginx --now
+sudo systemctl disable mysql --now
+sudo systemctl disable redis --now
+sudo systemctl disable tc_http_server --now
+
+
